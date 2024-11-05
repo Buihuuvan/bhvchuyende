@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng với số lượng và thanh toán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .product img {
+            width: 100px;
+            height: auto;
+        }
+        .product-info {
+            flex-grow: 1;
+            margin-left: 15px;
+        }
+        .product-name {
+            font-size: 18px;
+        }
+        .product-price {
+            font-size: 18px;
+            color: #333;
+        }
+        .cart {
+            margin-top: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .cart-total {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .remove-button {
+            background-color: #dc3545;
+        }
+        .remove-button:hover {
+            background-color: #c82333;
+        }
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Giỏ hàng</h1>
+
+    <div class="product">
+        <img src="https://via.placeholder.com/100" alt="Sản phẩm 1">
+        <div class="product-info">
+            <span class="product-name">Sản phẩm 1</span><br>
+            <span class="product-price">$10</span>
+        </div>
+        <button onclick="addToCart()">Thêm vào giỏ</button>
+    </div>
+
+    <div class="cart">
+        <h2>Giỏ hàng của bạn</h2>
+        <div id="cart-content">Chưa có sản phẩm nào trong giỏ hàng</div>
+        <div class="cart-total">Tổng: $<span id="total">0</span></div>
+        <button id="checkout-button" style="display:none;" onclick="checkout()">Thanh toán</button>
+    </div>
+
+    <script>
+        let total = 0;
+        let quantity = 0;
+        let isInCart = false;
+
+        function addToCart() {
+            if (!isInCart) {
+                quantity = 1;
+                total = 10;
+                updateCart();
+                isInCart = true;
+            } else {
+                quantity++;
+                total += 10;
+                updateCart();
+            }
+        }
+
+        function updateCart() {
+            const cartContent = document.getElementById('cart-content');
+            cartContent.innerHTML = `
+                <div class="cart-item" id="cart-item-1">
+                    <span>Sản phẩm 1: $10 x <input type="number" class="quantity-input" value="${quantity}" min="1" onchange="updateQuantity(this.value)" /></span>
+                    <button class="remove-button" onclick="removeFromCart()">Xóa</button>
+                </div>
+            `;
+            document.getElementById('total').innerText = total;
+            document.getElementById('checkout-button').style.display = 'block';
+        }
+
+        function updateQuantity(newQuantity) {
+            quantity = parseInt(newQuantity);
+            total = quantity * 10; // Cập nhật tổng dựa trên số lượng
+            document.getElementById('total').innerText = total;
+        }
+
+        function removeFromCart() {
+            const cartContent = document.getElementById('cart-content');
+            cartContent.innerHTML = 'Chưa có sản phẩm nào trong giỏ hàng';
+            total = 0;
+            quantity = 0;
+            document.getElementById('total').innerText = total;
+            document.getElementById('checkout-button').style.display = 'none';
+            isInCart = false;
+        }
+
+        function checkout() {
+            alert(`Bạn đã thanh toán thành công: $${total}`);
+            removeFromCart(); // Xóa sản phẩm khỏi giỏ hàng sau khi thanh toán
+        }
+    </script>
+
+</body>
+</html>

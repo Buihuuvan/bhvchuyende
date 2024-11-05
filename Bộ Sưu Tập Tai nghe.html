@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bộ Sưu Tập Tai Nghe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .product-collection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .price {
+            color: #e74c3c;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product p {
+            line-height: 1.6;
+        }
+        .buy-now {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bộ Sưu Tập Máy Tính Xách Tay</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 80%;
+                margin: 50px auto;
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+            .product-item {
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                text-align: center;
+                transition: transform 0.3s;
+            }
+            .product-item:hover {
+                transform: scale(1.05);
+            }
+            .product-item img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            .product-item h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .product-item p {
+                font-size: 14px;
+                color: #555;
+                margin-bottom: 15px;
+            }
+            .price {
+                font-size: 20px;
+                color: #e74c3c;
+                margin-bottom: 15px;
+            }
+            .buy-btn {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 14px;
+            }
+            .buy-btn:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        tml>
+        <html lang="en">
+            <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+                <title>Electro - HTML Ecommerce Template</title>
+        
+                <!-- Google font -->
+                <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+        
+                <!-- Bootstrap -->
+                <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+        
+                <!-- Slick -->
+                <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+                <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+        
+                <!-- nouislider -->
+                <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+        
+                <!-- Font Awesome Icon -->
+                <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+                <!-- Custom stlylesheet -->
+                <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        
+                <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                <!--[if lt IE 9]>
+                  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+                  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                <![endif]-->
+        
+            </head>
+            <body>
+                <!-- HEADER -->
+                <header>
+                    <!-- TOP HEADER -->
+                    <div id="top-header">
+                        <div class="container">
+                            <ul class="header-links pull-left">
+                                <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+                                <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+                                <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+                            </ul>
+                            <ul class="header-links pull-right">
+                                <li><a href="#"><i class="fa fa-dollar"></i>đô la mỹ</a></li>
+                                <li><a href="#"><i class="fa fa-user-o"></i>Tài khoản của tôi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /TOP HEADER -->
+        
+                    <!-- MAIN HEADER -->
+                    <div id="header">
+                        <!-- container -->
+                        <div class="container">
+                            <!-- row -->
+                            <div class="row">
+                                <!-- LOGO -->
+                                <div class="col-md-3">
+                                    <div class="header-logo">
+                                        <a href="#" class="logo">
+                                            <img src="c:\Users\ACER\Downloads\f1246bac57eb4f5ba19e5a28da2afb18-free-removebg-preview.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- /LOGO -->
+        
+                                <!-- SEARCH BAR -->
+                                <div class="col-md-6">
+                                    <div class="header-search">
+                                        <form>
+                                            <select class="input-select">
+                                                <option value="0">Tất cả các danh mục</option>
+                                                <option value="1">Thể loại 01</option>
+                                                <option value="1">Thể loại 02</option>
+                                            </select>
+                                            <input class="input" placeholder="Search here">
+                                            <button class="search-btn">Tìm kiếm</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- /SEARCH BAR -->
+        
+                                <!-- ACCOUNT -->
+                                <div class="col-md-3 clearfix">
+                                    <div class="header-ctn">
+                                        <!-- Wishlist -->
+                                        <div>
+                                            <a href="#">
+                                                <i class="fa fa-heart-o"></i>
+                                                <span>Danh sách mong muốn của bạn</span>
+                                                <div class="qty">2</div>
+                                            </a>
+                                        </div>
+                                        <!-- /Wishlist -->
+        
+                                        <!-- Cart -->
+                                        <div class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                <span>Giỏ hàng của bạn</span>
+                                                <div class="qty">3</div>
+                                            </a>
+                                            <div class="cart-dropdown">
+                                                <div class="cart-list">
+                                                    <div class="product-widget">
+                                                        <div class="product-img">
+                                                            <img src="./img/product01.png" alt="">
+                                                        </div>
+                                                        <div class="product-body">
+                                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                            <h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
+                                                        </div>
+                                                        <button class="delete"><i class="fa fa-close"></i></button>
+                                                    </div>
+        
+                                                    <div class="product-widget">
+                                                        <div class="product-img">
+                                                            <img src="./img/product02.png" alt="">
+                                                        </div>
+                                                        <div class="product-body">
+                                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                            <h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
+                                                        </div>
+                                                        <button class="delete"><i class="fa fa-close"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-summary">
+                                                    <small>3 Item(s) selected</small>
+                                                    <h5>SUBTOTAL: $2940.00</h5>
+                                                </div>
+                                                <div class="cart-btns">
+                                                    <a href="#">View Cart</a>
+                                                    <a href="#">Checkout  <i class="fa fa-arrow-circle-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /Cart -->
+        
+                                        <!-- Menu Toogle -->
+                                        <div class="menu-toggle">
+                                            <a href="#">
+                                                <i class="fa fa-bars"></i>
+                                                <span>Menu</span>
+                                            </a>
+                                        </div>
+                                        <!-- /Menu Toogle -->
+                                    </div>
+                                </div>
+                                <!-- /ACCOUNT -->
+                            </div>
+                            <!-- row -->
+                        </div>
+                        <!-- container -->
+                    </div>
+                    <!-- /MAIN HEADER -->
+                </header>
+                <!-- /HEADER -->
+        
+                <!-- NAVIGATION -->
+                <nav id="navigation">
+                    <!-- container -->
+                    <div class="container">
+                        <!-- responsive-nav -->
+                        <div id="responsive-nav">
+                            <!-- NAV -->
+                            <ul class="main-nav nav navbar-nav">
+                                <li class="active"><a href="index.html">Trang chủ</a></li>
+                                <li><a href="máy tính xách tay.html">Máy tính xách tay</a></li>
+                                <li><a href="màn hình máy tính.html">màn hình máy tính</a></li>
+                                <li><a href="máy tính bảng.html">Máy tính bảng</a></li>
+                                <li><a href="tai nghe.html">Tai nghe</a></li>
+                            </ul>
+                            <!-- /NAV -->
+                        </div>
+                        <!-- /responsive-nav -->
+                    </div>
+                    <!-- /container -->
+                </nav>
+                <!-- /NAVIGATION -->
+        
+                <!-- SECTION -->
+                <div class="section">
+    <h1>Bộ Sưu Tập Tai Nghe</h1>
+</header>
+
+<div class="container">
+    <div class="product-collection">
+        <!-- Tai Nghe 1 -->
+        <div class="product">
+            <img src="f:\CHUYÊN ĐỀ\ẢNH CHUYÊN ĐỀ\ezgif-3-2a102e266ba9_15326bef447c473eb07d61b0e843d206_5771f81db9cb441cbc3698ac0e24f888_grande.webp" alt="Tai nghe Razer Kraken V3 X USB">
+            <h2>Tai nghe Razer Kraken V3 X USB</h2>
+            <p>Tai nghe Razer Kraken X USB chỉ nặng 285g, thiết kế mỏng của tai nghe chơi game PC này được hỗ trợ bởi bộ ba yếu tố khiến nó trở nên gần như không trọng lượng. </p>
+            <div class="price">990.000₫</div>
+            <a href="chi tiết bộ sưu tập Tai nghe Razer Kraken V3 X USB.html" class="buy-now">Mua Ngay</a>
+        </div>
+
+        <!-- Tai Nghe 2 -->
+        <div class="product">
+            <img src="f:\CHUYÊN ĐỀ\ẢNH CHUYÊN ĐỀ\11181-na-gallery-virtuoso-se-brown-01_925fbcaeb9894d5d826ee9f4b805618e_b6b38f6665df470b8137973797647ba6_grande.webp" alt="Tai nghe Corsair Virtuoso RGB Wireless SE Espresso">
+            <h2>Tai nghe Corsair Virtuoso RGB Wireless SE Espresso</h2>
+            <p>Virtuoso RGB Wireless SE Espresso là một trong những dòng tai nghe gaming Corsair mới nhất từ chất lượng thiết kế, âm thanh, thiết kế đều mang nét đột phá cao cấp.</p>
+            <div class="price">5.490.000₫</div>
+            <a href="chi tiết bộ sưu tập tai nghe Corsair Virtuoso RGB Wireless SE Espresso.html" class="buy-now">Mua Ngay</a>
+        </div>
+
+        <!-- Tai Nghe 3 -->
+        <div class="product">
+            <img src="f:\CHUYÊN ĐỀ\ẢNH CHUYÊN ĐỀ\_edition_pdp_img_buy_01.png__1920x1080_crop-fit_optimize_subsampling-2_791d6a1f180442d89ab267c6591425de_grande.png" alt="Tai nghe Steelseries Arctis Nova 7 Dragon Edition">
+            <h2>Tai nghe Steelseries Arctis Nova 7 Dragon Edition</h2>
+            <p>Tai nghe Steelseries Arctis Nova 7 sở hữu một thiết kế đột phá và mới mẻ hơn so với những dòng tai nghe trước, không còn mang cảm giác mỏng manh, thay vào đó là sự cứng cáp và chắc chắn hơn. Nhưng trọng lượng của chiếc tai nghe không dây này vẫn khá nhẹ (thép phủ PVD nhẹ hơn 14%), nên không mang lại cảm giác nặng nề khi đeo quá lâu.</p>
+            <div class="price">4.790.000₫</div>
+            <a href="chi tiết bộ sưu tập Tai nghe Steelseries Arctis Nova 7 Dragon Edition.html" class="buy-now">Mua Ngay</a>
+        </div>
+
+        <!-- Tai Nghe 4 -->
+        <div class="product">
+            <img src="f:\CHUYÊN ĐỀ\ẢNH CHUYÊN ĐỀ\ch-g733-lightspeed-wireless-black-666_2eb1a71d562e4a6d853a0f086723cbe3_f7f15fa3c25c4d6190c05c6db168fbf7_grande.webp" alt="Tai nghe Logitech G733 LIGHTSPEED Wireless Black">
+            <h2>Tai nghe Logitech G733 LIGHTSPEED Wireless Black</h2>
+            <p>Logitech G733 LIGHTSPEED Wireless Black dòng tai nghe máy tính được thiết kế mang đến sự thoải mái cho game thủ. Đây là mẫu tai nghe không dây được trang bị âm thanh lập thể, các bộ lọc âm thanh và tính năng chiếu sáng tiên tiến bạn cần để nhìn, nói và chơi phong cách hơn bao giờ hết.</p>
+            <div class="price">2.290.000₫</div>
+            <a href="chi tiết bộ sưu tập Tai nghe Logitech G733 LIGHTSPEED Wireless Black.html" class="buy-now">Mua Ngay</a>
+        </div>
+        <!-- Tai Nghe 5 -->
+        <div class="product">
+            <img src="f:\CHUYÊN ĐỀ\ẢNH CHUYÊN ĐỀ\gvn_g633s_964d0ac679b44f1e9879d57b44954369_63b6ba0e8c73477d8d7e11f58c2b4162_grande.webp" alt="Tai nghe Logitech G633S">
+            <h2>Tai nghe Logitech G633S</h2>
+            <p>Các màng loa của tai nghe máy tính Pro-G 50 mm nâng cấp được tạo thành từ lưới dệt hybrid, mở ra âm thanh chi tiết, sâu và trong hơn ở mọi mức âm lượng. Giờ đây, với đường kính rộng hơn, Pro-G thể hiện tốt hơn bao giờ hết.</p>
+            <div class="price">2.490.000₫</div>
+            <a href="chi tiết bộ sưu tập Tai nghe Logitech G633S.html" class="buy-now">Mua Ngay</a>
+        </div>
+
+        <!-- Tai Nghe 6 -->
+        <div class="product">
+            <img src="f:\CHUYÊN ĐỀ\ẢNH CHUYÊN ĐỀ\bhv1506.webp" alt="Tai nghe Rapoo VH610 7.1">
+            <h2>Tai nghe Rapoo VH610 7.1</h2>
+            <p>Tai nghe Rapoo VH610 là một trong những sản phẩm chất lượng của hãng Rapoo, sở hữu thiết kế đẹp mắt, âm thanh tốt và chất lượng xây dựng cao. VH610 là lựa chọn tuyệt vời cho những người dùng đòi hỏi chất lượng âm thanh cao và thoải mái khi sử dụng trong thời gian dài. Cùng Mygear tìm hiểu kỹ hơn qua bài viết dưới đây nhé.</p>
+            <div class="price">990.000₫</div>
+            <a href="chi tiết bộ sưu tâp Tai nghe Rapoo VH610 7.1.html" class="buy-now">Mua Ngay</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Cửa Hàng Tai Nghe. Bản quyền thuộc về chúng tôi.</p>
+</footer>
+
+</body>
+</html>
+<div class="container">
+    <!-- row -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="newsletter">
+                <p>Sign Up for the <strong>TIN</strong></p>
+                <form>
+                    <input class="input" type="email" placeholder="Enter Your Email">
+                    <button class="newsletter-btn"><i class="fa fa-envelope"></i>Đăng ký</button>
+                </form>
+                <ul class="newsletter-follow">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /row -->
+</div>
+<!-- /container -->
+</div>
+<!-- /NEWSLETTER -->
+
+<!-- FOOTER -->
+<footer id="footer">
+<!-- top footer -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-3 col-xs-6">
+                <div class="footer">
+                    <h3 class="footer-title">About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="footer">
+                    <h3 class="footer-title">Loại</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Ưu đãi hấp dẫn</a></li>
+                        <li><a href="#">Máy tính xách tay</a></li>
+                        <li><a href="#">Màn Hình Máy Tính</a></li>
+                        <li><a href="#">Máy tính bảng</a></li>
+                        <li><a href="#">Tai nghe</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="clearfix visible-xs"></div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="footer">
+                    <h3 class="footer-title">Thông tin</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Liên hệ với chúng tôi</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Đơn đặt hàng và trả hàng</a></li>
+                        <li><a href="#">Điều khoản &� Điều kiện</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <div class="footer">
+                    <h3 class="footer-title">Dịch</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Tài khoản của tôi</a></li>
+                        <li><a href="#">Xem giỏ hàng</a></li>
+                        <li><a href="#">Danh sách yêu thích</a></li>
+                        <li><a href="#">Theo dõi đơn hàng của tôi</a></li>
+                        <li><a href="#">Trợ giúp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /top footer -->
+
+<!-- bottom footer -->
+<div id="bottom-footer" class="section">
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="footer-payments">
+                    <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+                    <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+                    <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+                    <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+                    <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+                    <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+                </ul>
+                <span class="copyright">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </span>
+            </div>
+        </div>
+            <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /bottom footer -->
+</footer>
+<!-- /FOOTER -->
+
+<!-- jQuery Plugins -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery.zoom.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

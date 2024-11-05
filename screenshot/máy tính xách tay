@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Xách Tay</title>
+    <!-- Liên kết đến Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-primary text-white text-center py-4">
+    <h1>Máy Tính Xách Tay</h1>
+</header>
+
+<!-- Container -->
+<div class="container mt-5">
+    <!-- Row cho danh mục -->
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Các Dòng Máy Tính Xách Tay</h2>
+            <p>Có nhiều dòng máy tính xách tay phù hợp cho từng mục đích sử dụng như chơi game, làm việc, học tập.</p>
+        </div>
+    </div>
+
+    <!-- Row cho đặc điểm -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2>Đặc Điểm Máy Tính Xách Tay</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Khả năng di động cao</li>
+                <li class="list-group-item">Cấu hình đa dạng</li>
+                <li class="list-group-item">Thời lượng pin lâu</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Row cho thương hiệu -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h2>Thương Hiệu Nổi Tiếng</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Apple">
+                        <div class="card-body">
+                            <h5 class="card-title">Apple</h5>
+                            <p class="card-text">Máy tính xách tay đẳng cấp với thiết kế sang trọng và hệ điều hành macOS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Dell">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell</h5>
+                            <p class="card-text">Nổi tiếng với độ bền cao và hỗ trợ người dùng tuyệt vời.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="HP">
+                        <div class="card-body">
+                            <h5 class="card-title">HP</h5>
+                            <p class="card-text">Lựa chọn hàng đầu cho doanh nghiệp và người dùng phổ thông.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Lenovo">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo</h5>
+                            <p class="card-text">Máy tính chất lượng cao với hiệu suất mạnh mẽ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-4 mt-5">
+    <p>&copy; 2024 Thông tin về Máy Tính Xách Tay</p>
+</footer>
+
+<!-- Liên kết đến Bootstrap JS và thư viện jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương Trình Khuyến Mãi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .banner {
+            background-color: #ff6347;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .banner h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .banner p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .discount {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .discount h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            flex-basis: 30%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 16px;
+            color: #666;
+        }
+        .product .price {
+            font-size: 24px;
+            color: #ff6347;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta a {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .cta a:hover {
+            background-color: #ff4500;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Banner -->
+        <div class="banner">
+            <h1>Khuyến Mãi Đặc Biệt!</h1>
+            <p>Giảm giá lên đến <strong>50%</strong> cho tất cả các sản phẩm!</p>
+        </div>
+
+        <!-- Discount Section -->
+        <div class="discount">
+            <h2>Mua ngay và nhận thêm ưu đãi <strong>20%</strong>!</h2>
+            <p>Chỉ còn 3 ngày nữa!</p>
+        </div>
+
+        <!-- Products Section -->
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 1">
+                <h3>Sản phẩm 1</h3>
+                <p>Mô tả ngắn gọn về sản phẩm.</p>
+                <p class="price">1,000,000đ</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 2">
+                <h3>Sản phẩm 2</h3>
+                <p>Mô tả ngắn gọn về sản phẩm.</p>
+                <p class="price">750,000đ</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Sản phẩm 3">
+                <h3>Sản phẩm 3</h3>
+                <p>Mô tả ngắn gọn về sản phẩm.</p>
+                <p class="price">500,000đ</p>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <a href="#">Mua Ngay</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cửa hàng ABC - Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>

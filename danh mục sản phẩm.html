@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Mục Sản Phẩm Máy Tính</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .category-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+        .category-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .category-item h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .category-item p {
+            font-size: 14px;
+            color: #555;
+        }
+        .category-item a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .category-item a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Danh Mục Sản Phẩm Máy Tính</h1>
+
+    <div class="category-list">
+        <div class="category-item">
+            <img src="https://via.placeholder.com/100" alt="Máy tính để bàn">
+            <h2>Máy Tính Để Bàn</h2>
+            <p>Khám phá các mẫu máy tính để bàn mạnh mẽ, phù hợp cho công việc và giải trí.</p>
+            <a href="#">Xem sản phẩm</a>
+        </div>
+
+        <div class="category-item">
+            <img src="https://via.placeholder.com/100" alt="Laptop">
+            <h2>Laptop</h2>
+            <p>Những mẫu laptop hiện đại, nhỏ gọn, và hiệu năng cao cho mọi nhu cầu.</p>
+            <a href="#">Xem sản phẩm</a>
+        </div>
+
+        <div class="category-item">
+            <img src="https://via.placeholder.com/100" alt="Linh kiện máy tính">
+            <h2>Linh Kiện Máy Tính</h2>
+            <p>Các linh kiện máy tính chất lượng, từ CPU, RAM đến bo mạch chủ và GPU.</p>
+            <a href="#">Xem sản phẩm</a>
+        </div>
+
+        <div class="category-item">
+            <img src="https://via.placeholder.com/100" alt="Màn hình máy tính">
+            <h2>Màn Hình Máy Tính</h2>
+            <p>Chọn mua các mẫu màn hình sắc nét với nhiều kích thước và độ phân giải khác nhau.</p>
+            <a href="#">Xem sản phẩm</a>
+        </div>
+
+        <div class="category-item">
+            <img src="https://via.placeholder.com/100" alt="Phụ kiện máy tính">
+            <h2>Phụ Kiện Máy Tính</h2>
+            <p>Các loại phụ kiện như chuột, bàn phím, tai nghe, và nhiều thiết bị khác.</p>
+            <a href="#">Xem sản phẩm</a>
+        </div>
+
+        <div class="category-item">
+            <img src="https://via.placeholder.com/100" alt="Phần mềm">
+            <h2>Phần Mềm Máy Tính</h2>
+            <p>Phần mềm bản quyền, hệ điều hành, và ứng dụng cho máy tính của bạn.</p>
+            <a href="#">Xem sản phẩm</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
